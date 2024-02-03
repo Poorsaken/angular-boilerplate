@@ -2,7 +2,7 @@
 
     min-height: 100vh;
     display: grid;
-    @apply bg-zinc-100;
+    background-color: #111111
     
 }
 
@@ -12,6 +12,36 @@
     font-family: 'Garamond';
     place-self: center;
     font-size: 4rem;
-    @apply animate-bounce;
+    margin-top: 15%;
+    color: #ffffff
+}
 
+
+.down {
+
+     
+        @apply animate-bounce h-20 w-20;
+   
+        filter: invert(100%);
+}
+
+.flex-even {
+
+ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.openfill{
+    width: 80%;
+    background-color: antiquewhite;
+}
+
+.open {
+   
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
 }
