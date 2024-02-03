@@ -27,3 +27,22 @@ a{
     color: #1d1d1f;
 
 }
+
+.fb img {
+
+    width: 2rem;
+    height: 2rem;
+}
+
+.contact{
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact>div{
+
+    margin: 10%;
+}
