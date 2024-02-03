@@ -1,0 +1,29 @@
+.parent-header{
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 9vh;
+}
+
+.navlinks {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+li{
+
+    margin: 10%;
+    list-style: none;
+}
+
+a{
+
+    text-decoration: none;
+    color: #1d1d1f;
+
+}
