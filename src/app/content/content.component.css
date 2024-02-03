@@ -2,7 +2,7 @@
 
     min-height: 100vh;
     display: grid;
-    @apply bg-zinc-200;
+    @apply bg-zinc-100;
     
 }
 
@@ -12,5 +12,6 @@
     font-family: 'Garamond';
     place-self: center;
     font-size: 4rem;
+    @apply animate-bounce;
 
 }
