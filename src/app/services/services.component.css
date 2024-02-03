@@ -1,0 +1,120 @@
+*{
+    --white: #ffffff;
+
+
+}
+
+.services-parent {
+display: grid;
+}
+
+.service-title {
+place-self: center;
+    margin-top: 5%;
+    font-family: 'Poppins';
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.animations-parent {
+
+    margin-top: 8%;
+ 
+    @apply flex flex-row justify-start
+
+}
+
+.gsap{
+    font-size: 5.5rem;
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+
+
+.animations-parent-two {
+
+    margin-bottom: 10%;
+    @apply flex flex-row justify-end
+
+}
+
+
+.service-desc{
+
+width: 85%;
+place-self: center;
+font-size: 1.2rem;
+text-align: center;
+}
+
+
+.cards-parent{
+
+    @apply grid flex-row
+
+    
+}
+
+
+.card-container {
+
+    place-self: center;
+    width: 90%;
+    height: 600px;
+    @apply border border-white p-4 rounded-lg
+}
+
+.tech {
+
+@apply grid
+
+}
+
+
+.left {
+
+    width: 60%;
+    padding: 5%;
+    color: var(--white);
+  
+}
+
+.inner-container {
+
+    @apply flex flex-row;
+  
+}
+
+.right{
+
+    display: grid;
+}
+.boxes {
+
+   display: grid;
+    grid-template-columns: repeat(5,);
+    grid-template-rows: repeat(5,);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+.box1 { grid-area: 1 / 1 / 2 / 2; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
+.box2 { grid-area: 1 / 2 / 2 / 3; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
+.box3 { grid-area: 1 / 3 / 2 / 4; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
+.box4 { grid-area: 2 / 1 / 3 / 2; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
+.box5 { grid-area: 2 / 2 / 3 / 3; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
+.box6 { grid-area: 2 / 3 / 3 / 4; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
+.box7 { grid-area: 3 / 1 / 4 / 2; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
+.box8 { grid-area: 3 / 2 / 4 / 3; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
+.box9 { grid-area: 3 / 3 / 4 / 4; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
+
+.left>h1{
+
+    font-size:5rem;
+    font-weight:--white;
+}
+.left>p{
+
+    font-size: 1.2rem;
+}

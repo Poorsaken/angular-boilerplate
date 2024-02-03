@@ -39,9 +39,23 @@
     background-color: antiquewhite;
 }
 
-.open {
+.open > .towork {
    
     font-size: 2rem;
     color: #ffffff;
     text-transform: uppercase;
+}
+
+.open p{
+    
+    color: #ffffff;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+
+
+.towork {
+
+    @apply animate-pulse
 }

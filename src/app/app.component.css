@@ -1,0 +1,20 @@
+*{
+
+    background-color: #111111;
+    
+}
+
+/* custom-scrollbar.css */
+html::-webkit-scrollbar {
+    width: 2vw; /* width of the scrollbar */
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background-color: #c02e2e; /* color of the thumb */
+    border-radius: 6px; /* round corners */
+  }
+  
+  html::-webkit-scrollbar-track {
+    background-color: #d84747; /* color of the track */
+  }
+  
