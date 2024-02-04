@@ -25,4 +25,4 @@ import { SmoothScrollDirective } from './smooth-scroll.directive';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

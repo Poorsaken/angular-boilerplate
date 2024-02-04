@@ -1,6 +1,8 @@
 *{
 
     background-color: #111111;
+    cursor: url('../assets/images/dot.png') 12 12, auto;
+    user-select: none;
     
 }
 
@@ -18,3 +20,22 @@ html::-webkit-scrollbar {
     background-color: #d84747; /* color of the track */
   }
   
+/* Include this style in your app.component.css */
+.follower {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  background: none;
+  border: #f2f2f2 solid;
+  border-radius: 50%;
+}
+
+
+
+
+/* Include this style in your app.component.css */
+
+/* Styles for devices with a screen width up to 767 pixels (typically smartphones) */
+
+

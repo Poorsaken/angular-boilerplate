@@ -20,7 +20,15 @@ place-self: center;
 .animations-parent {
 
     margin-top: 8%;
- 
+    
+    @apply flex flex-row justify-start
+
+}
+
+.animations-parent {
+
+    margin-top: 8%;
+    
     @apply flex flex-row justify-start
 
 }
@@ -35,10 +43,22 @@ place-self: center;
 .animations-parent-two {
 
     margin-bottom: 10%;
-    @apply flex flex-row justify-end
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
 
 }
 
+
+/* app.component.css */
+
+.animations-parent-two {
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: flex-end;
+  }
+ 
+  
 
 .service-desc{
 
@@ -76,6 +96,7 @@ text-align: center;
 
     width: 60%;
     padding: 5%;
+    font-weight: 500;
     color: var(--white);
   
 }
@@ -97,12 +118,13 @@ text-align: center;
     grid-template-rows: repeat(5,);
     grid-column-gap: 50px;
     grid-row-gap: 50px;
+    margin-left: 15%;
 }
 
 .box1 { grid-area: 1 / 1 / 2 / 2; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
 .box2 { grid-area: 1 / 2 / 2 / 3; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
 .box3 { grid-area: 1 / 3 / 2 / 4; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
-.box4 { grid-area: 2 / 1 / 3 / 2; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
+.boxnode { grid-area: 2 / 1 / 3 / 2; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
 .box5 { grid-area: 2 / 2 / 3 / 3; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
 .box6 { grid-area: 2 / 3 / 3 / 4; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
 .box7 { grid-area: 3 / 1 / 4 / 2; width: 150px; height: 150px; @apply border border-white p-4 rounded-lg; color: var(--white);}
@@ -118,3 +140,149 @@ text-align: center;
 
     font-size: 1.2rem;
 }
+
+.box5 img{
+
+   
+    object-fit: cover;
+    filter: invert(100%);
+}
+
+
+.box9 img{
+
+    padding-left: 5%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+ 
+@media (max-width: 600px) {
+    .animations-parent-two {
+     
+  
+    
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+    }
+  
+   .animations-parent{
+
+   
+    flex-wrap: wrap; 
+    
+  
+   }
+
+  
+    .gsap h1 {
+     
+      
+      font-size: 70px;
+        
+     
+    }
+
+    .card-container {
+
+        width: 30%;
+        margin: 2%;
+    height: 600px;
+    place-self: start;
+
+    }
+
+
+    .left {
+
+        width: 100%;
+        padding: 5%;
+        font-weight: 500;
+        color: var(--white);
+      
+    }
+
+    .left h1{
+
+        font-size: 3rem;
+    }
+
+    .left>p{
+
+        font-size: 0.92rem;
+    }
+
+    .inner-container{
+
+
+        display: block;
+    }
+
+    .cards-parent{
+
+        @apply flex-none flex-row
+    
+        
+    }
+    .right{
+
+        display: flex;
+        margin-left: -15%;
+        place-self: start;
+   
+    }
+
+
+    .card-container {
+
+        place-self: center;
+        width: 90%;
+        height: 800px;
+        @apply border border-white p-4 rounded-lg
+    }
+    
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 50px;
+       
+        /* grid-template-columns: repeat(2,);
+        grid-template-rows: repeat(3,);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px; */
+     }
+
+     .box1 { grid-area:1 / 1 / 2 / 2;  width: 70px; height: 70px; }
+     .box2 { grid-area:1 / 2 / 2 / 3;width: 70px; height: 70px; }
+     .box3 { grid-area:1 / 3 / 2 / 4; width: 70px; height: 70px; }
+  .boxnode { grid-area: 1 / 4 / 2 / 5;  width: 70px; height: 70px; }
+     .box5 { grid-area: 2 / 1 / 3 / 2; width: 70px; height: 70px; }
+    .box6 { grid-area: 2 / 2 / 3 / 3;  width: 70px; height: 70px; }
+     .box7 { grid-area: 2 / 3 / 3 / 4; width: 70px; height: 70px; }
+     .box8 { grid-area: 2 / 4 / 3 / 5; width: 70px; height: 70px; }
+    .box9 { grid-area:  3 / 1 / 4 / 2; width: 70px; height: 70px; }
+     
+
+
+     
+.box5 img{
+
+   
+    object-fit: cover;
+    filter: invert(100%);
+}
+
+
+.box9 img{
+
+    padding-left: 5%;
+    width: 60px;
+    height: 30px;
+    object-fit: cover;
+}
+
+  }
