@@ -10,7 +10,7 @@
     
  
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,800;1,900&display=swap');
 /* custom-scrollbar.css */
 html::-webkit-scrollbar {
     width: 12px; /* width of the scrollbar */
