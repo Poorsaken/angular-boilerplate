@@ -8,6 +8,8 @@ import { ContentComponent } from './content/content.component';
 import { TechstackComponent } from './techstack/techstack.component';
 import { ServicesComponent } from './services/services.component';
 import { SmoothScrollDirective } from './smooth-scroll.directive';
+
+
 @NgModule({
   declarations: [
     AppComponent,

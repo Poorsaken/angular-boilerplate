@@ -3,23 +3,13 @@
     background-color: #111111;
     cursor: url('../assets/images/dot.png') 12 12, auto;
     user-select: none;
-    
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
 /* custom-scrollbar.css */
-html::-webkit-scrollbar {
-    width: 2vw; /* width of the scrollbar */
-  }
-  
-  html::-webkit-scrollbar-thumb {
-    background-color: #c02e2e; /* color of the thumb */
-    border-radius: 6px; /* round corners */
-  }
-  
-  html::-webkit-scrollbar-track {
-    background-color: #d84747; /* color of the track */
-  }
-  
+
 /* Include this style in your app.component.css */
 .follower {
   position: fixed;
