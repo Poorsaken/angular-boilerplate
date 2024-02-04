@@ -13,7 +13,7 @@
 
 /* custom-scrollbar.css */
 html::-webkit-scrollbar {
-    width: 13px; /* width of the scrollbar */
+    width: 12px; /* width of the scrollbar */
   }
   
   html::-webkit-scrollbar-thumb {
