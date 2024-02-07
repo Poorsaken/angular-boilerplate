@@ -1,23 +1,40 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { fromEvent } from 'rxjs';
+import ScrollTrigger from 'gsap/ScrollTrigger'; // Import ScrollTrigger from the correct path
+import { ScrollSmootherPlugin } from 'gsap/ScrollSmootherPlugin';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent implements OnInit {
+
   title = 'angular-test';
 
-  ngAfterViewInit() {
-    gsap.registerPlugin(ScrollTrigger);
+  ngOnInit() {
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother); // Register ScrollSmoother
+
+    // Define animations for elements within your Angular components
+    gsap.from('.app-container', {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '.app-container',
+        start: 'top 90%', // Start animation when the top of the container is 90% in view
+        end: 'bottom 80%',
+        data-lag:, // End animation when the bottom of the container is 80% in view
+        scrub: true, // Smoothly scrub through the animation timeline as the user scrolls
+      },
+    });
+
+    // Call the method to initialize the mouse follower
     this.initMouseFollower();
-    this.initSmoothScroll();
   }
 
   private initMouseFollower() {
+    // Select the element with the class 'follower'
     const flair = document.querySelector('.follower');
 
     if (flair instanceof HTMLElement) {
@@ -41,24 +58,10 @@ export class AppComponent implements AfterViewInit {
 
       flair.addEventListener('click', onClick);
 
-      fromEvent<MouseEvent>(window, 'mousemove')
-        .subscribe((e) => {
-          xTo(e.clientX);
-          yTo(e.clientY);
-        });
+      window.addEventListener('mousemove', (e) => {
+        xTo(e.clientX);
+        yTo(e.clientY);
+      });
     }
-  }
-
-  private initSmoothScroll() {
-    gsap.to('#smooth-wrapper', {
-      y: 0, // Adjust this value based on your content height
-      ease: 'power3.inOut',
-      scrollTrigger: {
-        trigger: '#smooth-wrapper',
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: true,
-      },
-    });
   }
 }
