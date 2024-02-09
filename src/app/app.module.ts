@@ -9,6 +9,20 @@ import { TechstackComponent } from './techstack/techstack.component';
 import { ServicesComponent } from './services/services.component';
 import { SmoothScrollDirective } from './smooth-scroll.directive';
 
+import {RouterModule, Routes} from '@angular/router';
+import { ShowcaseComponent } from './showcase/showcase.component';
+import { ParentComponentComponent } from './parent-component/parent-component.component';
+
+const appRoute: Routes =[
+
+    {path:'', component: ParentComponentComponent },
+    {path:'showcase', component: ShowcaseComponent },
+
+  
+  
+
+]
+
 
 @NgModule({
   declarations: [
@@ -17,12 +31,14 @@ import { SmoothScrollDirective } from './smooth-scroll.directive';
     ContentComponent,
     ServicesComponent,
     TechstackComponent,
-    SmoothScrollDirective
+    SmoothScrollDirective,
+    ShowcaseComponent,
+    ParentComponentComponent
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot(appRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]

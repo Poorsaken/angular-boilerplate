@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger'; // Import ScrollTrigger from the correct path
-import { ScrollSmootherPlugin } from 'gsap/ScrollSmootherPlugin';
+// import { ScrollSmootherPlugin } from 'gsap/ScrollSmootherPlugin';
 
 @Component({
   selector: 'app-root',
@@ -13,21 +13,21 @@ export class AppComponent implements OnInit {
   title = 'angular-test';
 
   ngOnInit() {
-    gsap.registerPlugin(ScrollTrigger, ScrollSmoother); // Register ScrollSmoother
+    // gsap.registerPlugin(ScrollTrigger, ScrollSmoother); // Register ScrollSmoother
 
-    // Define animations for elements within your Angular components
-    gsap.from('.app-container', {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      scrollTrigger: {
-        trigger: '.app-container',
-        start: 'top 90%', // Start animation when the top of the container is 90% in view
-        end: 'bottom 80%',
-        data-lag:, // End animation when the bottom of the container is 80% in view
-        scrub: true, // Smoothly scrub through the animation timeline as the user scrolls
-      },
-    });
+    // // Define animations for elements within your Angular components
+    // gsap.from('.app-container', {
+    //   opacity: 0,
+    //   y: 50,
+    //   duration: 1,
+    //   scrollTrigger: {
+    //     trigger: '.app-container',
+    //     start: 'top 90%', // Start animation when the top of the container is 90% in view
+    //     end: 'bottom 80%',
+    //     data-lag:, // End animation when the bottom of the container is 80% in view
+    //     scrub: true, // Smoothly scrub through the animation timeline as the user scrolls
+    //   },
+    // });
 
     // Call the method to initialize the mouse follower
     this.initMouseFollower();

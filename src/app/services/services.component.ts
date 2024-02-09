@@ -142,7 +142,7 @@ export class ServicesComponent implements AfterViewInit {
       gsap.fromTo(
         textElements,
         { color: 'gray' },
-        { color: 'white', duration: 1, stagger: 0.2, ease: 'power2.inOut', repeat: -1, yoyo: true }
+        { color: 'white', duration: 1, stagger: 1, ease: 'power2.inOut', repeat: -1, yoyo: true }
       );
     }
   }

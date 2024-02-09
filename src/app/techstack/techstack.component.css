@@ -1,26 +1,32 @@
 .web-design-parent{
 
     color: #ffffff;
-    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 1rem;
+    border-top: 0.2px solid rgba(247, 247, 247, 0.5); 
+ 
 }
 
 .web-design-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    background-color: #111111;
 }
+
+
 
 .feats {
 color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0% 5% 0% 1%;
+    margin: 0% 1% 0% 1%;
  width: 8.75rem;
  height: 2.625rem;
  border-radius: 0.625rem;
  border:  0.063rem solid #ffffff;
+
 }
 
 
@@ -32,9 +38,10 @@ color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 0.2px solid rgba(247, 247, 247, 0.5); /* Set the top border style, color, and width */
-            border-bottom: 0.2px rgba(247, 247, 247, 0.5); /* Set the bottom border style, color, and width */
-            padding: 20px; /* Add some padding to make the content more visible */
+
+   
+         
+            /* Add some padding to make the content more visible */
 
 }
 
@@ -77,7 +84,7 @@ color: #ffffff;
 
 
     width: 6.25rem;
-    height:6.25rem ;
+    height:1.25rem ;
     object-fit: cover;    transition: all 0.3s ease;
     opacity: 0;
    
@@ -85,9 +92,9 @@ color: #ffffff;
 
 
 
-.website-one:hover .project-image img {
-    width: 8.25rem;
-    height:8.25rem ;
+.web-design-child:hover .project-image img {
+    width: 7.25rem;
+    height:5.25rem ;
     object-fit: cover;
     transition: all 0.3s ease;
     opacity: 1;
@@ -99,7 +106,7 @@ color: #ffffff;
 }
 
 
-.website-one:hover .swift-title{
+.web-design-child:hover .swift-title{
     transition: all 0.3s ease;
     
     margin-left: 3.125rem;
