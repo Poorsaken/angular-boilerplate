@@ -1,0 +1,27 @@
+*{
+
+    background-color: #111111;
+}
+
+.parent {
+
+
+    display: grid;
+}
+
+.front-title{
+
+
+    place-self: center;
+    color: #f5f5f7;
+    font-size: 5rem;
+}
+
+.front-desc{
+
+    color: #f5f5f7;
+    place-self: center;
+    font-size: 1rem;
+    width: 50%;
+    text-align: center;
+}
