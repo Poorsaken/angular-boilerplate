@@ -25,3 +25,13 @@
     width: 50%;
     text-align: center;
 }
+
+.swift-clickimg {
+    margin: 5% 0% 0% 0%;
+    place-self: center;
+}
+
+.swift-clickimg img {
+
+    border-radius: 0.92rem;
+}

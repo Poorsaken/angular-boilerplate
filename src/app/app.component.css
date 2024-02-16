@@ -11,17 +11,20 @@
 /* custom-scrollbar.css */
 
 /* Include this style in your app.component.css */
+
+
 .follower {
+
+
   position: fixed;
   width: 30px;
   height: 30px;
-
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background: none;
   border: #f2f2f2 solid;
   border-radius: 50%;
+  
 }
-
-
 
 
 /* Include this style in your app.component.css */

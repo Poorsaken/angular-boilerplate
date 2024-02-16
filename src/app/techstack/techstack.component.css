@@ -4,14 +4,14 @@
     margin-bottom: 10%;
     height: 1rem;
     border-top: 0.2px solid rgba(247, 247, 247, 0.5); 
- 
+
+
 }
 
 .web-design-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #111111;
 }
 
 
@@ -51,12 +51,14 @@ color: #ffffff;
     transition: all 0.3s ease;
     color: #ffffff;
     
+    
 }
 
 
 .swift-title h1{
     transition: all 0.3s ease;
     font-size: 2.5rem;
+  
     text-transform: uppercase;
 }
 
@@ -65,6 +67,7 @@ color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .feats {
@@ -77,6 +80,7 @@ color: #ffffff;
  height: 2.625rem;
  border-radius: 0.625rem;
  border:  0.063rem solid #ffffff;
+
 }
 
 
