@@ -115,3 +115,63 @@ color: #ffffff;
     
     margin-left: 3.125rem;
 }
+
+@media only screen and (max-width: 767px) {
+
+        .web-design-parent{
+
+            margin-bottom: 50%;
+        }
+    
+
+        .swift-title h1{
+
+            font-size: 1.5rem;
+        }
+
+        .feats {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0% 5% 0% 1%;
+         width: 5.75rem;
+         height: 2.325rem;
+         font-size: 0.62rem;
+         border-radius: 0.625rem;
+         border:  0.063rem solid #ffffff;
+
+        }
+    .website-one{
+      
+        margin-bottom: 5%;
+    }
+
+
+    .project-image img{
+
+
+        width: 4.25rem;
+        height:1.25rem ;
+        object-fit: cover;    transition: all 0.3s ease;
+        opacity: 0;
+       
+    }
+    
+    
+    
+    .web-design-child:hover .project-image img {
+        width: 5.25rem;
+        height:5.25rem ;
+        object-fit: cover;
+        transition: all 0.3s ease;
+        opacity: 1;
+        transform: scale(1.5);
+        border-radius: 0.625rem;
+
+        box-shadow: 0px 1px 8px 0px rgba(248, 248, 248, 0.1);
+    
+    
+    }
+    
+}

@@ -1,4 +1,81 @@
 *{
 
-color: #FFFFFF;
+    background-color: #111111;
 }
+
+.parent {
+
+
+    display: grid;
+}
+
+.front-title{
+
+
+    place-self: center;
+    color: #f5f5f7;
+    font-size: 5rem;
+}
+
+.front-desc{
+
+    color: #f5f5f7;
+    place-self: center;
+    font-size: 1rem;
+    width: 50%;
+    text-align: center;
+}
+
+.swift-clickimg {
+    margin: 5% 0% 0% 0%;
+    place-self: center;
+}
+
+.swift-clickimg img {
+
+    border-radius: 0.92rem;
+}
+
+.boxess{
+    display: flex;
+    place-self: center;
+    color: #f5f5f7;
+
+}
+
+.boxess >div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    width: 200px;
+    height: 50px;
+    border: #f5f5f7
+     solid 1px;
+     border-radius: 2rem;
+}
+.gallery{
+
+
+    place-self: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.images>img{
+
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    margin: 5%;
+}
+
+
+
+@media (max-width: 800px) {
+    .gallery {
+      flex-direction: column;
+    }
+  }
