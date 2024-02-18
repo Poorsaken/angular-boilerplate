@@ -12,7 +12,8 @@
     place-self: center;
     font-size: 4rem;
     margin-top: 15%;
-    color: #ffffff
+    color: #ffffff;
+    background-color: none;
 }
 
 
@@ -21,7 +22,7 @@
      
         @apply animate-bounce h-20 w-20;
    
-        filter: invert(100%);
+   
 }
 
 .flex-even {

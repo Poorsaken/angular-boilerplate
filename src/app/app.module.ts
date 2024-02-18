@@ -12,11 +12,13 @@ import { SmoothScrollDirective } from './smooth-scroll.directive';
 import {RouterModule, Routes} from '@angular/router';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { ParentComponentComponent } from './parent-component/parent-component.component';
+import { GraphicsComponent } from './graphics/graphics.component';
 
 const appRoute: Routes =[
 
     {path:'', component: ParentComponentComponent },
     {path:'showcase', component: ShowcaseComponent },
+    {path:'graphic', component:   GraphicsComponent},
 
   
   
@@ -33,7 +35,8 @@ const appRoute: Routes =[
     TechstackComponent,
     SmoothScrollDirective,
     ShowcaseComponent,
-    ParentComponentComponent
+    ParentComponentComponent,
+    GraphicsComponent
     
   ],
   imports: [
