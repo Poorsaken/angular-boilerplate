@@ -1,3 +1,9 @@
+
+
+    
+
+
+
 .homepage{
 
     min-height: 100vh;
@@ -7,14 +13,16 @@
 }
 
 
+
+
+
 .name {
-    font-family: 'EB Garamond';
-    place-self: center;
-    font-size: 4rem;
-    margin-top: 15%;
-    color: #ffffff;
-    background-color: none;
+ @apply w-[1000px] text-[40px] bg-gray-300 text-white place-self-center items-center font-medium size-9 ;
 }
+
+
+
+
 
 
 .down {
